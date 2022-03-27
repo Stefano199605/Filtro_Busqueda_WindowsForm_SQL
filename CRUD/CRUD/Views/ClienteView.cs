@@ -7,14 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
-namespace CRUD
+using CRUD.Controllers;
+namespace CRUD.Views
 {
-    public partial class Form1 : Form
+    public partial class ClienteView : Form
     {
-        public Form1()
+        public ClienteView()
         {
             InitializeComponent();
+            ClienteController ctrl = new ClienteController(this);
         }
     }
 }
